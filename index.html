@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Final Fantasy</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;500;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body id="body">
+	<div class="container">
+		<header class="header">
+			<a href="#" class="header__logo">Logo</a>
+			<div class="header__burger">
+				<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+					menu
+				</span>
+			</div>
+			<nav id="nav" class="header-nav">
+				<ul class="header-nav__ul">
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active">Home</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">About me</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">Projects</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">Contact me</a>
+					</li>
+
+				</ul>
+				<span id="icon-close" onclick="navToggle()" class="material-icons">
+					close
+				</span>
+			</nav>
+		</header>
+		<script src="script.js"></script>
+</body>
+
+</html>
