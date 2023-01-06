@@ -1,0 +1,80 @@
+.main-screen {
+    padding-top: 200px;
+    display: flex;
+    gap: 100px;
+    @include desktop-small {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__info {}
+
+    &__info-block {
+        display: flex;
+    }
+
+    &__info-block-title {
+        max-width: 586px;
+    }
+
+    &__title {
+        @include text($font-primary, 700, 96px, 96px, $color-white);
+        margin: 0;
+        margin-bottom: 45px;
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__arrow{
+        width: 96px;
+        height: 96px;
+        @include desktop-small {
+            display: none;
+        }
+    }
+
+    &__vector {
+        width: 89.96px;
+        height: 200px;
+        margin-top: 75px;
+        object-fit: contain;
+    }
+
+    &__buttoms {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 240px;
+    }
+
+    &__hire {
+        background: $color-primary;
+        line-height: 30px;
+    }
+
+    &__CV {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: $color-rgba1;
+    }
+}
+
+.main-screen {
+
+    &__bg {
+        position: relative;
+    }
+
+    &__man {
+        position: absolute;
+        bottom: -45px;
+        left: -40px;
+        @include desktop-small {
+            position: absolute;
+            bottom: -150px;
+            left: -45px;
+        }
+        
+    }
+}

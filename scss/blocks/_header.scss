@@ -4,7 +4,8 @@
     align-items: center;
     padding: 37px 0;
     &__logo {
-        @include text($font-primary, 700, 28px, 33px, $color-body);
+        @include text($font-secondary, 700, 24px, 36px, $color-white);
+        letter-spacing: 1.5;
     }
     &__burger {
         display: none;
@@ -28,11 +29,11 @@
         padding: 0;
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: 48px;
     }
 
     &__a {
-        @include text($font-primary, 400, 16px, 19px, $color-body);
+        @include text($font-primary, 400, 18px, 27px, $color-white);
         transition: $transition;
         @include desktop-small {
             color: $color-white;
