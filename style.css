@@ -546,6 +546,9 @@ img {
     color: #ffffff; }
     .my-works__title span {
       color: #DC143C; }
+    @media (max-width: 768px) {
+      .my-works__title {
+        font-size: 45px; } }
   .my-works__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -582,7 +585,10 @@ img {
     color: #ffffff;
     margin-bottom: 24px; }
   .item__btn {
+    border: 1px solid #DC143C;
     background: #DC143C; }
+    .item__btn:active {
+      background: transparent; }
 
 .item1 {
   background-image: url(/Final_Fantasy/img/item1.png);
@@ -630,19 +636,23 @@ img {
     color: #ffffff; }
     .contacts__title span {
       color: #DC143C; }
+    @media (max-width: 768px) {
+      .contacts__title {
+        font-size: 45px; } }
   .contacts__title-messenger {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
     color: #DC143C;
-    margin: 0; }
+    margin: 10px 0px; }
   .contacts__desc-messenger {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: rgba(238, 238, 238, 0.75); }
+    color: rgba(238, 238, 238, 0.75);
+    margin: 0; }
   .contacts__bg {
     display: flex;
     align-items: center;
@@ -657,3 +667,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 75px; }
+    @media (max-width: 576px) {
+      .footer__ul {
+        flex-direction: column;
+        text-align: center; } }

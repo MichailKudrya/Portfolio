@@ -7,6 +7,9 @@
         span {
             color: $color-primary;
         }
+        @include tablet-small {
+            font-size: 45px;
+        }
     }
 
     &__items {
@@ -56,11 +59,13 @@
     }
 
     &__btn {
-        
+        border: 1px solid $color_primary;
         background: $color-primary;
+        &:active {
+            background: transparent;
+
+        }
     }
-}
-.btn {
 }
 
 .item1 {

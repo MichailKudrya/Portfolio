@@ -22,15 +22,19 @@
         span {
             color: $color-primary;
         }
+        @include tablet-small {
+            font-size: 45px;
+        }
     }
 
     &__title-messenger {
         @include text($font-primary, 700, 18px, 27px, $color-primary);
-        margin: 0;
+        margin: 10px 0px;
     }
 
     &__desc-messenger {
         @include text($font-primary, 400, 16px, 24px, $color-text1);
+        margin: 0;
     }
 
     &__bg {
