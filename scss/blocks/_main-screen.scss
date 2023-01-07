@@ -1,13 +1,20 @@
 .main-screen {
     padding-top: 200px;
+    padding-bottom: 64px;
     display: flex;
     gap: 100px;
     @include desktop-small {
         flex-direction: column;
         align-items: center;
+        padding-top: 100px;
+        gap: 50px;
     }
 
-    &__info {}
+    &__info {
+        @include tablet-small {
+            margin-right: 60px;
+        }
+    }
 
     &__info-block {
         display: flex;
@@ -23,6 +30,11 @@
         margin-bottom: 45px;
         span {
             color: $color-primary;
+        }
+        @include mobile {
+            font-size: 40px;
+            text-align: center;
+            
         }
     }
 
@@ -45,16 +57,24 @@
         display: flex;
         gap: 24px;
         margin-bottom: 240px;
+        @include tablet-small {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
     }
 
     &__hire {
         background: $color-primary;
         line-height: 30px;
+       
     }
 
     &__CV {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 12px;
         background: $color-rgba1;
     }
@@ -73,7 +93,8 @@
         @include desktop-small {
             position: absolute;
             bottom: -150px;
-            left: -45px;
+            left: 60px;
+            width: 270px;
         }
         
     }

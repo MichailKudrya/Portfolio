@@ -1,0 +1,96 @@
+.my-works {
+    background-image: url(/Final_Fantasy/img/bg3.png);
+    padding: 180px 0px 140px;
+
+    &__title {
+        @include text($font-primary, 700, 64px, 96px, $color-white);
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 48px;
+        @include desktop-small {
+            grid-template-columns: 1fr 1fr; 
+        }
+        @include tablet-small {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    
+}
+.item {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 16px;
+    transition: $transition;
+    
+    &:hover {
+        
+        .item__info {
+            visibility: visible;
+            
+        }
+        
+    }
+
+    &__info {
+        padding: 25px;
+        visibility: hidden;
+        transition: $transition;
+        
+    }
+
+    &__title {
+        @include text($font-primary, 700, 16px, 24px, $color-white);
+
+    }
+
+    &__desc {
+        @include text($font-primary, 400, 14px, 21px, $color-white);
+        margin-bottom: 24px;
+    }
+
+    &__btn {
+        
+        background: $color-primary;
+    }
+}
+.btn {
+}
+
+.item1 {
+    background-image: url(/Final_Fantasy/img/item1.png);
+    background-size: cover;
+    
+    
+}
+
+.item2 {
+    background-image: url(/Final_Fantasy/img/item2.png);
+    background-size: cover;
+}
+
+.item3 {
+    background-image: url(/Final_Fantasy/img/item3.png);
+    background-size: cover;
+}
+
+.item4 {
+    background-image: url(/Final_Fantasy/img/item4.png);
+    background-size: cover;
+}
+
+.item5 {
+    background-image: url(/Final_Fantasy/img/item5.png);
+    background-size: cover;
+}
+
+.item6 {
+    background-image: url(/Final_Fantasy/img/item6.png);
+    background-size: cover;
+}

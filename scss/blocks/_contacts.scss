@@ -1,0 +1,44 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 100px ;
+    align-items: center;
+    gap: 40px;
+    @include desktop-small {
+        flex-direction: column;
+        .contacts__arrow {
+            display: none;
+        }
+    }
+
+    &__info {
+        @include desktop-small {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        @include text($font-primary, 700, 64px, 96px, $color-white);
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__title-messenger {
+        @include text($font-primary, 700, 18px, 27px, $color-primary);
+        margin: 0;
+    }
+
+    &__desc-messenger {
+        @include text($font-primary, 400, 16px, 24px, $color-text1);
+    }
+
+    &__bg {
+        display: flex;
+        align-items: center;
+        padding: 150px;
+        @include tablet-small {
+            padding: 0;
+        }
+    }
+}
