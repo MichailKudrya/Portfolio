@@ -4,9 +4,11 @@
 
     &__title {
         @include text($font-primary, 700, 64px, 96px, $color-white);
+
         span {
             color: $color-primary;
         }
+
         @include tablet-small {
             font-size: 45px;
         }
@@ -16,36 +18,44 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 48px;
+
         @include desktop-small {
-            grid-template-columns: 1fr 1fr; 
+            grid-template-columns: 1fr 1fr;
         }
+
         @include tablet-small {
             grid-template-columns: 1fr;
         }
     }
 
-    
+
 }
+
 .item {
     max-width: 100%;
     width: 100%;
     border-radius: 16px;
     transition: $transition;
-    
+
+
+
+
     &:hover {
-        
+
         .item__info {
             visibility: visible;
-            
+
         }
-        
+
     }
 
     &__info {
         padding: 25px;
         visibility: hidden;
         transition: $transition;
-        
+        border-radius: 16px;
+        backdrop-filter: blur(8px) brightness(80%);
+
     }
 
     &__title {
@@ -61,6 +71,7 @@
     &__btn {
         border: 1px solid $color_primary;
         background: $color-primary;
+
         &:active {
             background: transparent;
 
@@ -71,31 +82,142 @@
 .item1 {
     background-image: url(/Final_Fantasy/img/item1.png);
     background-size: cover;
-    
-    
+    animation: slide-tl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    @keyframes slide-tl {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+
+        50% {
+            transform: translateY(-50px) translateX(-50px);
+        }
+
+        100% {
+            transform: translateY(0) translateX(0);
+        }
+    }
+
+    @include desktop-small {
+        animation: none;
+    }
 }
 
 .item2 {
     background-image: url(/Final_Fantasy/img/item2.png);
     background-size: cover;
+    animation: slide-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    @keyframes slide-top {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-50px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @include desktop-small {
+        animation: none;
+    }
 }
 
 .item3 {
     background-image: url(/Final_Fantasy/img/item3.png);
     background-size: cover;
+    animation: slide-tr 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    @keyframes slide-tr {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+
+        50% {
+            transform: translateY(-50px) translateX(50px);
+        }
+
+        100% {
+            transform: translateY(0) translateX(0);
+        }
+    }
+
+    @include desktop-small {
+        animation: none;
+    }
 }
 
 .item4 {
     background-image: url(/Final_Fantasy/img/item4.png);
     background-size: cover;
+    animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    @keyframes slide-bl {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+
+        50% {
+            transform: translateY(50px) translateX(-50px);
+        }
+
+        100% {
+            transform: translateY(0) translateX(0);
+        }
+    }
+
+    @include desktop-small {
+        animation: none;
+    }
 }
 
 .item5 {
     background-image: url(/Final_Fantasy/img/item5.png);
     background-size: cover;
+    animation: slide-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    @keyframes slide-bottom {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(50px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @include desktop-small {
+        animation: none;
+    }
 }
 
 .item6 {
     background-image: url(/Final_Fantasy/img/item6.png);
     background-size: cover;
+    animation: slide-br 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    @keyframes slide-br {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+
+        50% {
+            transform: translateY(50px) translateX(50px);
+        }
+
+        100% {
+            transform: translateY(0) translateX(0);
+        }
+    }
+    @include desktop-small {
+        animation: none;
+    }
+
 }
