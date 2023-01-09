@@ -1,6 +1,9 @@
 .my-works {
     background-image: url(/Final_Fantasy/img/bg3.png);
     padding: 180px 0px 140px;
+    @include mobile {
+        padding: 70px 0px 50px;
+    }
 
     &__title {
         @include text($font-primary, 700, 64px, 96px, $color-white);

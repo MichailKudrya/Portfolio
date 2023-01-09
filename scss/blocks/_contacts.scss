@@ -10,6 +10,9 @@
             display: none;
         }
     }
+    @include mobile {
+        padding: 50px 0 50px;
+    }
 
     &__info {
         @include desktop-small {

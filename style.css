@@ -426,6 +426,10 @@ ul {
       align-items: center;
       padding-top: 100px;
       gap: 50px; } }
+  @media (max-width: 576px) {
+    .main-screen {
+      padding-top: 70px;
+      gap: 20px; } }
   @media (max-width: 768px) {
     .main-screen__info {
       margin-right: 60px; } }
@@ -468,6 +472,9 @@ ul {
         text-align: center;
         justify-content: center;
         margin-bottom: 100px; } }
+    @media (max-width: 576px) {
+      .main-screen__buttoms {
+        margin-bottom: 50px; } }
   .main-screen__hire {
     background: #DC143C;
     line-height: 30px; }
@@ -545,6 +552,9 @@ ul {
 .my-works {
   background-image: url(/Final_Fantasy/img/bg3.png);
   padding: 180px 0px 140px; }
+  @media (max-width: 576px) {
+    .my-works {
+      padding: 70px 0px 50px; } }
   .my-works__title {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -700,6 +710,9 @@ ul {
       flex-direction: column; }
       .contacts .contacts__arrow {
         display: none; } }
+  @media (max-width: 576px) {
+    .contacts {
+      padding: 50px 0 50px; } }
   @media (max-width: 1200px) {
     .contacts__info {
       text-align: center; } }
