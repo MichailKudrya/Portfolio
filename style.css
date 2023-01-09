@@ -489,7 +489,8 @@ img {
   padding-top: 250px;
   padding-bottom: 200px;
   display: flex;
-  gap: 120px; }
+  gap: 120px;
+  scroll-behavior: smooth; }
   @media (max-width: 1200px) {
     .about {
       flex-direction: column;
