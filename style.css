@@ -594,7 +594,7 @@ img {
       background: transparent; }
 
 .item1 {
-  background-image: url(/Final_Fantasy/img/item1.png);
+  background-image: url(img/item1.png);
   background-size: cover;
   animation: slide-tl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @keyframes slide-tl {
@@ -609,7 +609,7 @@ img {
       animation: none; } }
 
 .item2 {
-  background-image: url(/Final_Fantasy/img/item2.png);
+  background-image: url(img/item2.png);
   background-size: cover;
   animation: slide-top 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @keyframes slide-top {
@@ -624,7 +624,7 @@ img {
       animation: none; } }
 
 .item3 {
-  background-image: url(/Final_Fantasy/img/item3.png);
+  background-image: url(img/item3.png);
   background-size: cover;
   animation: slide-tr 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @keyframes slide-tr {
@@ -639,7 +639,7 @@ img {
       animation: none; } }
 
 .item4 {
-  background-image: url(/Final_Fantasy/img/item4.png);
+  background-image: url(img/item4.png);
   background-size: cover;
   animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @keyframes slide-bl {
@@ -654,7 +654,7 @@ img {
       animation: none; } }
 
 .item5 {
-  background-image: url(/Final_Fantasy/img/item5.png);
+  background-image: url(img/item5.png);
   background-size: cover;
   animation: slide-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @keyframes slide-bottom {
@@ -669,7 +669,7 @@ img {
       animation: none; } }
 
 .item6 {
-  background-image: url(/Final_Fantasy/img/item6.png);
+  background-image: url(img/item6.png);
   background-size: cover;
   animation: slide-br 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @keyframes slide-br {
