@@ -740,3 +740,7 @@ img {
       .footer__ul {
         flex-direction: column;
         text-align: center; } }
+  .footer__a {
+    transition: 0.3s all ease-in-out; }
+    .footer__a:hover {
+      color: #DC143C; }
