@@ -338,6 +338,9 @@ img {
   height: auto;
   object-fit: cover; }
 
+ul {
+  padding: 0; }
+
 .btn {
   font-family: "Poppins", sans-serif;
   font-weight: 700;

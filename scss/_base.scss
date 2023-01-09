@@ -34,6 +34,9 @@ img {
   height: auto;
   object-fit: cover;
 }
+ul {
+  padding: 0;
+}
 
 .btn {
   @include text($font-primary, 700, 18px, 27px, $color-white);
